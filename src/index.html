@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ganesh Jewelry Works</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .form-group { margin-bottom: 1em; }
+        label { display: block; margin-bottom: .5em; }
+        input, button { padding: .5em; width: 100%; }
+        button { margin-top: 1em; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Ganesh Jewellery Works</h1>
+       <!-- Login Form -->
+       <form id="loginForm">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <form id="jewelryForm" class="hidden">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="month">Month:</label>
+            <select id="month" name="month" required>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="installment">Installment:</label>
+            <input type="number" id="installment" name="installment" required>
+        </div>
+        <div class="form-group">
+            <label for="signature">Phone:</label>
+            <input type="text" id="signature" name="signature" required>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <script src="renderer.js"></script>
+</body>
+</html>
