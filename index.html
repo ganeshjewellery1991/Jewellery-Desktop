@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Aitheon Utilities</title>
+      <script >
+        function openTab(evt, cityName) {
+               // Declare all variables
+               var i, tabcontent, tablinks;
+           
+               // Get all elements with class="tabcontent" and hide them
+               tabcontent = document.getElementsByClassName("tabcontent");
+               for (i = 0; i < tabcontent.length; i++) {
+                   tabcontent[i].style.display = "none";
+               }
+           
+               // Get all elements with class="tablinks" and remove the class "active"
+               tablinks = document.getElementsByClassName("tablinks");
+               for (i = 0; i < tablinks.length; i++) {
+                   tablinks[i].className = tablinks[i].className.replace(" active", "");
+               }
+           
+               // Show the current tab, and add an "active" class to the button that opened the tab
+               document.getElementById(cityName).style.display = "block";
+               evt.currentTarget.className += " active";
+           }
+       </script>
+<style>
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+        
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+        
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .width_logo
+        {
+    width: 58%;
+    margin-top: 13px;
+        }
+        .heading
+        {
+            font-size: 30px;
+    letter-spacing: 11.2px;
+    /* font-weight: 900; */
+    text-align: center;
+    font-family: verdana;
+    margin-top: 19px !important;
+        }
+        .bell_logo
+        {
+            width: 75%;
+    margin-top: 13px;
+        }
+        .user_logo
+        {
+            width: 66%;
+    margin-top: 13px;
+        }
+        .clock
+        {
+            font-size: 23px !important;
+    font-family: verdana;
+    margin-top: 22px !important;
+    color: #000 !important;
+        }
+        .para_text
+        {
+            font-size: 17px !important;
+        }
+        .btn-primary
+        {
+            box-shadow: 3px 3px 2px gray  !important;
+        }
+        .btn-success
+        {
+            box-shadow: 3px 3px 2px gray  !important;
+        }
+        .margin_right
+        {
+            margin-right: 10px !important;
+            box-shadow: 3px 3px 2px gray  !important;
+        }
+        .clock1
+        {
+            font-size: 37px !important;
+    font-family: verdana;
+    margin-top: 22px !important;
+    color: #000 !important;
+    border-top: 2px solid #000;
+    background: #ddd;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+    
+        }
+        .btn_padding
+        {
+            padding: 15px 50px !important;
+            margin-bottom: 20px !important;
+            border-radius: 0px !important;
+        }
+        .form_btm
+        {
+            margin-bottom: 20px !important;
+        }
+        .top_one
+        {
+            float: right;
+            margin-top: 25px;
+        }
+        @media only screen and (max-width: 600px) {
+    .float_left {
+        float: left;
+    }
+    .mobile_view
+    {
+        width: 11% !important;
+    }
+    .user_view
+    {
+        width: 9% !important;
+    }
+    
+    .row_mobile
+    {
+        display: none !important;
+    }
+    .row_mobile_one
+    {
+        display: block !important;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .row_mobile
+    {
+        display: block !important;
+    }
+    .row_mobile_one
+    {
+        display: none !important;
+    }
+}
+
+        </style>
+       <!--Horizontal accordian tabs css start-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="fonts/font.css" rel="stylesheet">
+        <script type="text/javascript">
+        function changeHeadingBg(color){
+        document.body.style.background = color;
+    }
+        </script>
+
+       <!--Hozintal acordian tabs css end-->
+<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+   </head>
+   
+   <body>
+
+    <div class="container-fluid">
+        <div class="row row_mobile">
+                <div class="col-md-1">
+                </div>
+
+            <div class="col-md-2">
+                    <div class="form-group">
+                            <br/>
+                            <select class="form-control" id="sel1">
+                              <option>Current Accout</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+            </div>
+            <div class="col-md-1 text-center">
+                    <img class="width_logo" src="./assets/images/aitheon.jpg"/>
+                </div>
+            <div class="col-md-3">
+                <h3 class="heading">AITHEON</h3>
+            </div>
+            <div class="col-md-1">
+                    <img class="bell_logo" src="images/bell.png"/>
+            </div>
+            <div class="col-md-1">
+                    <img class="user_logo" src="images/user.png"/>
+            </div>
+            <div class="col-md-2">
+                    <div class="form-group">
+                            <br/>
+                            <select class="form-control" id="sel1">
+                              <option>User Name</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+            </div>
+            <div class="col-md-1 float_left">
+                </div>
+        </div>
+
+
+        <div class="row row_mobile_one">
+                
+            <div class="col-md-2 float_left">
+                    <div class="form-group">
+                            <br/>
+                            <select class="form-control" id="sel1">
+                              <option>Current Accout</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+            </div>
+            <div class="col-md-1 text-center float_left">
+                    <img class="width_logo" src="./assets/images/aitheon.jpg"/>
+                </div>
+            <div class="col-md-3 float_left">
+                <h3 class="heading">AITHEON</h3>
+            </div>
+            <div class="col-md-1 float_left">
+                    <img class="bell_logo mobile_view" src="images/bell.png"/>
+            </div>
+            <div class="col-md-1 float_left">
+                    <img class="user_logo user_view" src="images/user.png"/>
+            </div>
+            <div class="col-md-2 float_left">
+                    <div class="form-group">
+                            <br/>
+                            <select class="form-control" id="sel1">
+                              <option>User Name</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+     <!-- <h1></h1>
+      <div style="height:10%;width:100%">
+    <table style="width:10%;height:100%">
+        <tr>
+            <td>
+
+    
+</td>
+<td>
+    <div style="width:10%;height:10%"><img src="./assets/images/aitheon.jpg"/></div>
+    <div style="width:90%;text-align:center;">A I T H E O N</div>
+    <div style="width:10%"><i class="fa fa-bell" aria-hidden="true"></i></div>
+    <div><span><i class="fa fa-2x fa-user-circle" aria-hidden="true"></i></span></div>
+ 
+</td>
+</tr>
+</table>
+
+      </div>-->
+
+
+<div class="container-fluid">
+        <div class="row">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Time')">Time Clock</button>
+        <button class="tablinks" onclick="openTab(event, 'Drive')">Drive</button>
+        <button class="tablinks" onclick="openTab(event, 'Settings')">Settings</button>
+      </div>
+
+      <div class="row">
+      <div class="col-md-12">
+            <div id="Time" class="tabcontent">
+                    
+                    
+                            <h3 class="clock1">
+                                Clocked In 24:02
+                            </h3>
+                            <div class="text-center">
+                            <input class="btn btn-danger btn_padding margin_right" type="button" onclick="changeBodyBg('yellow');" value="Clock Out" name="Select Task"/>
+                   </div>
+                            
+                        <h2 class="clock">Track Time To Task:</h2>
+                    
+            
+                <h3 class="clock1">TaskName 00:25</h3>
+                        <div class="text-center form_btm">
+                                <input class="btn btn-primary btn_padding margin_right" type="button" value="btnTask" name="Select Task"/>
+                       
+                                <input class="btn btn-success btn_padding" type="button" value="btnTracking" name="Stop Tracking"/>
+                        </div>
+                  </div></div>
+      </div>
+      
+      
+      <div id="Drive" class="tabcontent">
+<div class="row">
+             <div class="col-md-6">
+        <h3 class="clock">London</h3>
+        <p class="para_text">London is the capital city of England.</p>
+      </div>
+      <div class="col-md-6">
+            <input class="btn btn-danger btn_padding margin_right top_one" type="button" value="Clock Out" name="Select Task"/>
+          </div>
+    </div>
+</div>
+
+      <div id="Settings" class="tabcontent">
+        <!--<h3 class="clock">London</h3>
+        <p class="para_text">London is the capital11111 city of England.</p>-->
+        <div class="row">
+                <div class="col-md-6">
+           <h3 class="clock">London</h3>
+           <p class="para_text">London is the capital city of England.</p>
+         </div>
+         <div class="col-md-6">
+               <input class="btn btn-danger btn_padding margin_right top_one" type="button" value="Clock Out" name="Select Task"/>
+             </div>
+       </div>
+      </div>
+      </div>
+      <br/><br/><br/>
+</div>
+
+   </body>
+   <script>
+   window.$=window.jQuery=require("./js/jquery-1.11.1.min.js")
+   </script>
+</html>
+
+
